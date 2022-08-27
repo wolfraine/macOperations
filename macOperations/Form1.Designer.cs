@@ -162,7 +162,7 @@
             this.btn_clear.TabIndex = 9;
             this.btn_clear.Text = "Clear";
             this.btn_clear.UseVisualStyleBackColor = true;
-            this.btn_clear.Click += new System.EventHandler(this.btn_clear_Click);
+            this.btn_clear.Click += new System.EventHandler(this.Btn_clear_Click);
             // 
             // statusStrip1
             // 
@@ -221,9 +221,6 @@
         private Button btn_add;
         private Button btn_remove;
         private Button btn_reverse;
-        private ToolStripMenuItem testToolStripMenuItem;
-        private ToolStripMenuItem testToolStripMenuItem1;
-        private ToolStripMenuItem toolStripMenuItem5;
         private MenuStrip menuStrip1;
         private ToolStripMenuItem toolStripMenuItem1;
         private ToolStripMenuItem endToolStripMenuItem;
