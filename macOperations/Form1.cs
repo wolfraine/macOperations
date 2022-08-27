@@ -35,5 +35,23 @@ namespace macOperations
             Array.Reverse(charArray);
             outputBox.Text =  new string(charArray);
         }
+
+        private void endToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Application.Exit();
+        }
+
+        private void authorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string title = "About Program";
+            string message = "Program to do simple operations\nwith MAC address";
+            MessageBox.Show(message, title);
+        }
+
+        private void btn_clear_Click(object sender, EventArgs e)
+        {
+            inputBox.Clear();
+            outputBox.Clear();
+        }
     }
 }
