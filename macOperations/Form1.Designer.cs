@@ -42,19 +42,23 @@
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.authorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btn_clear = new System.Windows.Forms.Button();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.statusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.menuStrip1.SuspendLayout();
+            this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // inputBox
             // 
-            this.inputBox.Location = new System.Drawing.Point(60, 87);
+            this.inputBox.Location = new System.Drawing.Point(72, 103);
             this.inputBox.Name = "inputBox";
             this.inputBox.Size = new System.Drawing.Size(132, 23);
             this.inputBox.TabIndex = 0;
             // 
             // outputBox
             // 
-            this.outputBox.Location = new System.Drawing.Point(60, 153);
+            this.outputBox.BackColor = System.Drawing.Color.White;
+            this.outputBox.Location = new System.Drawing.Point(72, 195);
             this.outputBox.Name = "outputBox";
             this.outputBox.ReadOnly = true;
             this.outputBox.Size = new System.Drawing.Size(132, 23);
@@ -63,7 +67,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(89, 69);
+            this.label1.Location = new System.Drawing.Point(101, 85);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(65, 15);
             this.label1.TabIndex = 2;
@@ -72,7 +76,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(89, 135);
+            this.label2.Location = new System.Drawing.Point(101, 177);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(73, 15);
             this.label2.TabIndex = 3;
@@ -80,7 +84,7 @@
             // 
             // btn_add
             // 
-            this.btn_add.Location = new System.Drawing.Point(257, 58);
+            this.btn_add.Location = new System.Drawing.Point(263, 67);
             this.btn_add.Name = "btn_add";
             this.btn_add.Size = new System.Drawing.Size(75, 23);
             this.btn_add.TabIndex = 4;
@@ -90,7 +94,7 @@
             // 
             // btn_remove
             // 
-            this.btn_remove.Location = new System.Drawing.Point(257, 124);
+            this.btn_remove.Location = new System.Drawing.Point(263, 114);
             this.btn_remove.Name = "btn_remove";
             this.btn_remove.Size = new System.Drawing.Size(75, 23);
             this.btn_remove.TabIndex = 5;
@@ -100,7 +104,7 @@
             // 
             // btn_reverse
             // 
-            this.btn_reverse.Location = new System.Drawing.Point(257, 185);
+            this.btn_reverse.Location = new System.Drawing.Point(263, 161);
             this.btn_reverse.Name = "btn_reverse";
             this.btn_reverse.Size = new System.Drawing.Size(85, 23);
             this.btn_reverse.TabIndex = 6;
@@ -110,12 +114,13 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem1,
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(430, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(414, 24);
             this.menuStrip1.TabIndex = 8;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -130,7 +135,7 @@
             // endToolStripMenuItem
             // 
             this.endToolStripMenuItem.Name = "endToolStripMenuItem";
-            this.endToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.endToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.endToolStripMenuItem.Text = "Close Program";
             this.endToolStripMenuItem.Click += new System.EventHandler(this.endToolStripMenuItem_Click);
             // 
@@ -145,13 +150,13 @@
             // authorToolStripMenuItem
             // 
             this.authorToolStripMenuItem.Name = "authorToolStripMenuItem";
-            this.authorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.authorToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
             this.authorToolStripMenuItem.Text = "About program";
             this.authorToolStripMenuItem.Click += new System.EventHandler(this.authorToolStripMenuItem_Click);
             // 
             // btn_clear
             // 
-            this.btn_clear.Location = new System.Drawing.Point(257, 238);
+            this.btn_clear.Location = new System.Drawing.Point(263, 206);
             this.btn_clear.Name = "btn_clear";
             this.btn_clear.Size = new System.Drawing.Size(75, 23);
             this.btn_clear.TabIndex = 9;
@@ -159,12 +164,30 @@
             this.btn_clear.UseVisualStyleBackColor = true;
             this.btn_clear.Click += new System.EventHandler(this.btn_clear_Click);
             // 
+            // statusStrip1
+            // 
+            this.statusStrip1.BackColor = System.Drawing.SystemColors.Window;
+            this.statusStrip1.Enabled = false;
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.statusLabel1});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 269);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(414, 22);
+            this.statusStrip1.TabIndex = 10;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // statusLabel1
+            // 
+            this.statusLabel1.Name = "statusLabel1";
+            this.statusLabel1.Size = new System.Drawing.Size(0, 17);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(430, 294);
+            this.ClientSize = new System.Drawing.Size(414, 291);
+            this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.btn_clear);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.btn_reverse);
@@ -174,12 +197,16 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.outputBox);
             this.Controls.Add(this.inputBox);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "macOperations";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -203,5 +230,7 @@
         private ToolStripMenuItem helpToolStripMenuItem;
         private ToolStripMenuItem authorToolStripMenuItem;
         private Button btn_clear;
+        private StatusStrip statusStrip1;
+        private ToolStripStatusLabel statusLabel1;
     }
 }
