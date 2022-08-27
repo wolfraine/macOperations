@@ -90,7 +90,7 @@
             this.btn_add.TabIndex = 4;
             this.btn_add.Text = "add :";
             this.btn_add.UseVisualStyleBackColor = true;
-            this.btn_add.Click += new System.EventHandler(this.btn_add_Click);
+            this.btn_add.Click += new System.EventHandler(this.Btn_add_Click);
             // 
             // btn_remove
             // 
@@ -100,7 +100,7 @@
             this.btn_remove.TabIndex = 5;
             this.btn_remove.Text = "remove :";
             this.btn_remove.UseVisualStyleBackColor = true;
-            this.btn_remove.Click += new System.EventHandler(this.btn_remove_Click);
+            this.btn_remove.Click += new System.EventHandler(this.Btn_remove_Click);
             // 
             // btn_reverse
             // 
@@ -110,7 +110,7 @@
             this.btn_reverse.TabIndex = 6;
             this.btn_reverse.Text = "reverse MAC";
             this.btn_reverse.UseVisualStyleBackColor = true;
-            this.btn_reverse.Click += new System.EventHandler(this.btn_reverse_Click);
+            this.btn_reverse.Click += new System.EventHandler(this.Btn_reverse_Click);
             // 
             // menuStrip1
             // 
@@ -137,7 +137,7 @@
             this.endToolStripMenuItem.Name = "endToolStripMenuItem";
             this.endToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.endToolStripMenuItem.Text = "Close Program";
-            this.endToolStripMenuItem.Click += new System.EventHandler(this.endToolStripMenuItem_Click);
+            this.endToolStripMenuItem.Click += new System.EventHandler(this.EndToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
@@ -152,7 +152,7 @@
             this.authorToolStripMenuItem.Name = "authorToolStripMenuItem";
             this.authorToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
             this.authorToolStripMenuItem.Text = "About program";
-            this.authorToolStripMenuItem.Click += new System.EventHandler(this.authorToolStripMenuItem_Click);
+            this.authorToolStripMenuItem.Click += new System.EventHandler(this.AuthorToolStripMenuItem_Click);
             // 
             // btn_clear
             // 

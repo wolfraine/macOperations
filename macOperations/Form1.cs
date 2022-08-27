@@ -23,7 +23,7 @@ namespace macOperations
             t.Start();
         }
 
-        private void btn_add_Click(object sender, EventArgs e)
+        private void Btn_add_Click(object sender, EventArgs e)
         {
             string case1 = inputBox.Text;
             case1 = case1.Replace(" ", "");
@@ -33,7 +33,7 @@ namespace macOperations
             Send_Label();
         }
 
-        private void btn_remove_Click(object sender, EventArgs e)
+        private void Btn_remove_Click(object sender, EventArgs e)
         {
             string case1 = inputBox.Text;
             case1 = case1.Replace(" ", "");
@@ -42,7 +42,7 @@ namespace macOperations
             Send_Label();
         }
 
-        private void btn_reverse_Click(object sender, EventArgs e)
+        private void Btn_reverse_Click(object sender, EventArgs e)
         {
             string case1 = inputBox.Text;
             case1 = case1.Replace(" ", "");
@@ -53,12 +53,12 @@ namespace macOperations
             Send_Label();
         }
 
-        private void endToolStripMenuItem_Click(object sender, EventArgs e)
+        private void EndToolStripMenuItem_Click(object sender, EventArgs e)
         {
             System.Windows.Forms.Application.Exit();
         }
 
-        private void authorToolStripMenuItem_Click(object sender, EventArgs e)
+        private void AuthorToolStripMenuItem_Click(object sender, EventArgs e)
         {
             string title = "About Program";
             string message = "Program to do simple operations\nwith MAC address";
