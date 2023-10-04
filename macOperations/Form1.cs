@@ -70,5 +70,10 @@ namespace macOperations
             inputBox.Clear();
             outputBox.Clear();
         }
+
+        private void Copy_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

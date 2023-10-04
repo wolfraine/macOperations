@@ -44,49 +44,53 @@
             this.btn_clear = new System.Windows.Forms.Button();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.statusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.CopyButton = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // inputBox
             // 
-            this.inputBox.Location = new System.Drawing.Point(72, 103);
+            this.inputBox.Location = new System.Drawing.Point(82, 137);
+            this.inputBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.inputBox.Name = "inputBox";
-            this.inputBox.Size = new System.Drawing.Size(132, 23);
+            this.inputBox.Size = new System.Drawing.Size(150, 27);
             this.inputBox.TabIndex = 0;
             // 
             // outputBox
             // 
             this.outputBox.BackColor = System.Drawing.Color.White;
-            this.outputBox.Location = new System.Drawing.Point(72, 195);
+            this.outputBox.Location = new System.Drawing.Point(82, 260);
+            this.outputBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.outputBox.Name = "outputBox";
             this.outputBox.ReadOnly = true;
-            this.outputBox.Size = new System.Drawing.Size(132, 23);
+            this.outputBox.Size = new System.Drawing.Size(150, 27);
             this.outputBox.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(101, 85);
+            this.label1.Location = new System.Drawing.Point(115, 113);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 15);
+            this.label1.Size = new System.Drawing.Size(79, 20);
             this.label1.TabIndex = 2;
             this.label1.Text = "MAC input";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(101, 177);
+            this.label2.Location = new System.Drawing.Point(115, 236);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(73, 15);
+            this.label2.Size = new System.Drawing.Size(89, 20);
             this.label2.TabIndex = 3;
             this.label2.Text = "MAC output";
             // 
             // btn_add
             // 
-            this.btn_add.Location = new System.Drawing.Point(263, 67);
+            this.btn_add.Location = new System.Drawing.Point(296, 79);
+            this.btn_add.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_add.Name = "btn_add";
-            this.btn_add.Size = new System.Drawing.Size(75, 23);
+            this.btn_add.Size = new System.Drawing.Size(97, 31);
             this.btn_add.TabIndex = 4;
             this.btn_add.Text = "add :";
             this.btn_add.UseVisualStyleBackColor = true;
@@ -94,9 +98,10 @@
             // 
             // btn_remove
             // 
-            this.btn_remove.Location = new System.Drawing.Point(263, 114);
+            this.btn_remove.Location = new System.Drawing.Point(296, 137);
+            this.btn_remove.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_remove.Name = "btn_remove";
-            this.btn_remove.Size = new System.Drawing.Size(75, 23);
+            this.btn_remove.Size = new System.Drawing.Size(97, 31);
             this.btn_remove.TabIndex = 5;
             this.btn_remove.Text = "remove :";
             this.btn_remove.UseVisualStyleBackColor = true;
@@ -104,9 +109,10 @@
             // 
             // btn_reverse
             // 
-            this.btn_reverse.Location = new System.Drawing.Point(263, 161);
+            this.btn_reverse.Location = new System.Drawing.Point(296, 200);
+            this.btn_reverse.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_reverse.Name = "btn_reverse";
-            this.btn_reverse.Size = new System.Drawing.Size(85, 23);
+            this.btn_reverse.Size = new System.Drawing.Size(97, 31);
             this.btn_reverse.TabIndex = 6;
             this.btn_reverse.Text = "reverse MAC";
             this.btn_reverse.UseVisualStyleBackColor = true;
@@ -115,12 +121,14 @@
             // menuStrip1
             // 
             this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem1,
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(414, 24);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(7, 3, 0, 3);
+            this.menuStrip1.Size = new System.Drawing.Size(473, 30);
             this.menuStrip1.TabIndex = 8;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -129,13 +137,13 @@
             this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.endToolStripMenuItem});
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(65, 20);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(80, 24);
             this.toolStripMenuItem1.Text = "Program";
             // 
             // endToolStripMenuItem
             // 
             this.endToolStripMenuItem.Name = "endToolStripMenuItem";
-            this.endToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.endToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
             this.endToolStripMenuItem.Text = "Close Program";
             this.endToolStripMenuItem.Click += new System.EventHandler(this.EndToolStripMenuItem_Click);
             // 
@@ -144,21 +152,22 @@
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.authorToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(55, 24);
             this.helpToolStripMenuItem.Text = "Help";
             // 
             // authorToolStripMenuItem
             // 
             this.authorToolStripMenuItem.Name = "authorToolStripMenuItem";
-            this.authorToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.authorToolStripMenuItem.Size = new System.Drawing.Size(195, 26);
             this.authorToolStripMenuItem.Text = "About program";
             this.authorToolStripMenuItem.Click += new System.EventHandler(this.AuthorToolStripMenuItem_Click);
             // 
             // btn_clear
             // 
-            this.btn_clear.Location = new System.Drawing.Point(263, 206);
+            this.btn_clear.Location = new System.Drawing.Point(296, 260);
+            this.btn_clear.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_clear.Name = "btn_clear";
-            this.btn_clear.Size = new System.Drawing.Size(75, 23);
+            this.btn_clear.Size = new System.Drawing.Size(97, 31);
             this.btn_clear.TabIndex = 9;
             this.btn_clear.Text = "Clear";
             this.btn_clear.UseVisualStyleBackColor = true;
@@ -168,25 +177,38 @@
             // 
             this.statusStrip1.BackColor = System.Drawing.SystemColors.Window;
             this.statusStrip1.Enabled = false;
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.statusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 269);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 366);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(414, 22);
+            this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 16, 0);
+            this.statusStrip1.Size = new System.Drawing.Size(473, 22);
             this.statusStrip1.TabIndex = 10;
             this.statusStrip1.Text = "statusStrip1";
             // 
             // statusLabel1
             // 
             this.statusLabel1.Name = "statusLabel1";
-            this.statusLabel1.Size = new System.Drawing.Size(0, 17);
+            this.statusLabel1.Size = new System.Drawing.Size(0, 16);
+            // 
+            // CopyButton
+            // 
+            this.CopyButton.Location = new System.Drawing.Point(296, 314);
+            this.CopyButton.Name = "CopyButton";
+            this.CopyButton.Size = new System.Drawing.Size(97, 29);
+            this.CopyButton.TabIndex = 11;
+            this.CopyButton.Text = "Copy";
+            this.CopyButton.UseVisualStyleBackColor = true;
+            this.CopyButton.Click += new System.EventHandler(this.Copy_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(414, 291);
+            this.ClientSize = new System.Drawing.Size(473, 388);
+            this.Controls.Add(this.CopyButton);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.btn_clear);
             this.Controls.Add(this.menuStrip1);
@@ -200,6 +222,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "macOperations";
@@ -229,5 +252,6 @@
         private Button btn_clear;
         private StatusStrip statusStrip1;
         private ToolStripStatusLabel statusLabel1;
+        private Button CopyButton;
     }
 }
